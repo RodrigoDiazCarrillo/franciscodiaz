@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import LangContext, { languajes } from './context';
+import {ComponentHeader} from './components/Header';
 
 function App() {
+  const [languaje, setLanguaje] = useState(languajes.spanish);
+
   return (
+    <LangContext.Provider value={languaje}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ComponentHeader/>
     </div>
+    </LangContext.Provider>
   );
 }
 

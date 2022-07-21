@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/franciscodiaz/static/css/main.0413d913.css",
+    "main.js": "/franciscodiaz/static/js/main.6aa5847d.js",
+    "static/js/787.af77570f.chunk.js": "/franciscodiaz/static/js/787.af77570f.chunk.js",
+    "static/media/photo_main.jpg": "/franciscodiaz/static/media/photo_main.26216c0a0e23aab72f20.jpg",
+    "static/media/gallery1.png": "/franciscodiaz/static/media/gallery1.96eea3750aae4be11135.png",
+    "static/media/photo_personal.jpg": "/franciscodiaz/static/media/photo_personal.1d31e323417572f752e2.jpg",
+    "static/media/gallery2.jpg": "/franciscodiaz/static/media/gallery2.870080bf62f3d7dfa4d9.jpg",
+    "index.html": "/franciscodiaz/index.html",
+    "main.0413d913.css.map": "/franciscodiaz/static/css/main.0413d913.css.map",
+    "main.6aa5847d.js.map": "/franciscodiaz/static/js/main.6aa5847d.js.map",
+    "787.af77570f.chunk.js.map": "/franciscodiaz/static/js/787.af77570f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0413d913.css",
+    "static/js/main.6aa5847d.js"
+  ]
+}

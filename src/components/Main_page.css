@@ -1,0 +1,136 @@
+.header_main{
+    color: white;
+
+}
+.header_main .menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.header_main .name{
+    width: fit-content;
+    margin-left: 3rem;
+    text-align: left;
+}
+.header_main .name h1{
+    font-weight: 300;
+    margin: 2rem 0 0 1rem;
+}
+.header_main .name span{
+    color:coral;
+}
+.header_main .name h3{
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+}
+.header_main .quote_phide{
+   width: 80%;
+   margin: 20vh auto 30vh;
+   font-size: 1.2rem;
+   font-weight: 200;
+   transition: margin 1s ease-out;
+}
+.header_main .quote_pshow{
+    transition: margin 1s ease-out;
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    font-weight: 200;
+ }
+.header_main .quote{
+    color: coral;
+    margin: 0 .5rem;
+}
+.main_photo {
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../img/photo_main.jpg"); 
+    background-size: cover;
+    box-shadow: inset 20px -20px 100px 90px rgb(0, 0, 0);
+
+}
+.bg_content{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: black;
+    z-index: -1;
+}
+.bodyshow, .startbtnhide{
+    visibility:visible;
+}
+.bodyhide, .startbtnshow{
+    display: none;
+}
+.footer{
+    background-color: rgba(171, 171, 171, 0.5);
+    color: white;
+    font-size: .7rem;
+    padding: .5rem;
+}
+.quote_phide{
+    animation-duration: 5s;
+    animation-name: slide1;
+}
+
+@keyframes slide1 {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  .header_main .name h1,
+  .header_main .name h3,
+  .header_main .menu,
+  #startbtn{
+    animation-duration: 7s;
+    animation-name: slide2;
+}
+@keyframes slide2 {
+    0% {
+        opacity: 0;
+      }
+    
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+/*Languaje button*/
+.header_main .menu>button, #startbtn{
+    width: 4rem;
+    font-size: .8rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+    font-family: 'Noto Sans Display', sans-serif;
+    border-top-width: 1px;
+	border-bottom-width: 1px;
+    border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0);
+	border-bottom-color: rgba(255,255,255,0);
+}
+.header_main .menu>button:hover, #startbtn:hover{
+    
+    transition: ease-out 0.5s;
+    font-size: .7rem;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+    border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+}
+.header_main .menu>button:hover::before, #startbtn:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}

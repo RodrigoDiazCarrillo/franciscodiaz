@@ -1,0 +1,118 @@
+.bio{
+    margin-bottom: 2rem;
+}
+.bio_hide {
+    width: 70%;
+    max-height: 10rem;
+    overflow: hidden;
+    margin: 0 auto;
+    color: white;
+    border-bottom: solid 1px coral;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    transition: max-height 0.5s ease-out;
+}
+.bio_show {
+    transition: max-height 0.5s ease-in;
+    max-height: 20rem;  
+    overflow: hidden;
+    margin: 0 auto;
+    color: white;
+    margin-top: 3rem;
+    border-bottom: solid 1px coral;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    width: 70%;
+}
+.bio_show>div, .bio_hide>div{
+    text-align: justify;
+    
+}
+.bio_show p, .bio_hide p{
+    font-size: .7rem;
+    font-weight: 200;
+    margin: 0;
+}
+.bio h2{
+    text-align: left;
+    font-weight: 400;
+}
+img{
+    width: 20vw;
+    float: left;
+    margin-right: 1rem;
+}
+.bio button{
+    background-color: rgb(0,0,0,0);
+    color: coral;
+
+}
+/*More button*/
+.bio .showbtn, .gal .showbtn{
+    width: 4rem;
+    font-size: .8rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: coral;
+    cursor: pointer;
+    font-family: 'Noto Sans Display', sans-serif;
+    border-top-width: 1px;
+	border-bottom-width: 1px;
+    border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0);
+	border-bottom-color: rgba(255,255,255,0);
+}
+.bio .showbtn:hover ,.gal .showbtn:hover{
+    
+    transition: ease-out 0.5s;
+    font-size: .7rem;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+    border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,127,80,0.5);
+	border-bottom-color: rgba(255,127,80,0.5);
+}
+.bio .showbtn:hover::before, .gal .showbtn:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+/*Read more button*/
+.bio .readmorebtn_show, .gal .readmorebtn_show{
+    width: 5.5rem;
+    font-size: .8rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: coral;
+    cursor: pointer;
+    font-family: 'Noto Sans Display', sans-serif;
+    border-top-width: 1px;
+	border-bottom-width: 1px;
+    border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0);
+	border-bottom-color: rgba(255,255,255,0);
+}
+.bio .readmorebtn_show:hover, .gal .readmorebtn_show:hover{
+
+    transition: ease-out 0.5s;
+    font-size: .7rem;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+    border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,127,80,0.5);
+	border-bottom-color: rgba(255,127,80,0.5);
+}
+.bio .readmorebtn_show:hover::before, .gal .readmorebtn_show:hover::before  {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.bio .readmorebtn_hide, .gal .readmorebtn_hide{
+    visibility: hidden;
+}
+.bio .showbtns, .gal .showbtns{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}

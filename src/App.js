@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import LangContext, { languajes } from './context';
-import {ComponentHeader} from './components/Header';
+import {Main_page} from './components/Main_page';
+
 
 function App() {
   const [languaje, setLanguaje] = useState(languajes.spanish);
@@ -9,7 +10,7 @@ function App() {
   return (
     <LangContext.Provider value={languaje}>
     <div className="App">
-      <ComponentHeader/>
+      <Main_page/>
     </div>
     </LangContext.Provider>
   );

@@ -1,0 +1,99 @@
+.gal{
+    margin-bottom: 2rem;
+}
+.gal_hide {
+    width: 70%;
+    max-height: 20rem;
+    overflow: hidden;
+    margin: 0 auto;
+    color: white;
+    border-bottom: solid 1px coral;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    transition: max-height 0.5s ease-out;
+}
+.gal_show {
+    transition: max-height 0.5s ease-in;
+    max-height: 50em;  
+    overflow: hidden; 
+    margin: 0 auto;
+    color: white;
+    margin-top: 3rem;
+    border-bottom: solid 1px coral;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    width: 70%;
+}
+.gal_show>div, .bio_hide>div{
+    text-align: justify;
+}
+.gal_show p, .bio_hide p{
+    font-size: .7rem;
+    font-weight: 200;
+    margin: 0;
+}
+.gal h2{
+    text-align: left;
+    font-weight: 400;
+}
+img{
+    width: 20vw;
+    float: left;
+    margin-right: 1rem;
+}
+.gal button{
+    background-color: rgb(0,0,0,0);
+    color: coral;
+
+}
+/*Grid*/
+.item1 { 
+    grid-area: a; 
+    background-image: url("../img/photo_main.jpg"); 
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.item2 { 
+    grid-area: b; 
+    background-image: url("../img/photo_personal.jpg");  
+    background-size:cover;
+    background-position: 50% 50%;
+}
+.item3 { 
+    grid-area: c; 
+    background-image: url("../img/gallery2.jpg"); 
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.item4 { 
+    grid-area: d; 
+    background-image: url("../img/photo_personal.jpg"); 
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.item5 { 
+    grid-area: e; 
+    background-image: url("../img/gallery1.png"); 
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 15em 8em 10em;
+    grid-template-areas:
+      'a a a a d d'
+      'b c c c d d'
+      'b e e e d d';
+    gap: 10px;
+    background-color: rgba(171, 171, 171, 0.5);
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
